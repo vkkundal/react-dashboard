@@ -1,0 +1,54 @@
+@import "./variable";
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.login-page{
+   background-color: $primary-color; 
+}
+
+.login-form{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.email {
+    font-size: 13px;
+    margin-bottom: -15px;
+    margin-left: 15px;
+    z-index: 1;
+    background: #fff;
+    display: inline;
+    width: 75px;
+    padding: 5px;
+    color: #aca9a9;
+}
+
+.password{
+    font-size: 13px;
+    margin-bottom: -15px;
+    margin-left: 15px;
+    z-index: 1;
+    background: #fff;
+    display: inline;
+    width: 73px;
+    padding: 5px;
+    color: #aca9a9;
+}
+
+.fp a{
+    color: #000;
+    font-size: 13px;
+}
+
+
+
+
+
+
+

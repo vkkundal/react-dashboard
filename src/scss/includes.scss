@@ -1,0 +1,25 @@
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+// Optional
+@import "node_modules/bootstrap/scss/reboot";
+// @import "node_modules/bootstrap/scss/type";
+// @import "node_modules/bootstrap/scss/images";
+// @import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/utilities";
+@import './global';
+@import './loginheader';
+@import './spinner';
+@import './loadingpage';
+@import './header';
+@import './leftmenu';
+@import './loginform';
+@import './main';
+@import './adminlayout';
+@import './table';
+@import './admindetails';
+@import './popup';
+@import './provider';
+@import './checkout'

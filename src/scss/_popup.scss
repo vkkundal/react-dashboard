@@ -1,0 +1,154 @@
+@import "./variable";
+.popup-overlay {
+    position: fixed;
+    padding: 20px 0;
+    top: 0;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(#707070, 0.4);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.popup-heading {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000; 
+    text-transform: uppercase;
+    & span {
+        font-weight: 900;
+        color: #5a6da3;
+    }
+}
+
+.popup-mobile {
+    font-size: 13px;
+    margin-bottom: -15px;
+    margin-left: 15px;
+    z-index: 1;
+    background: #fff;
+    display: inline;
+    width: 54px;
+    padding: 5px;
+    color: #aca9a9;
+}
+
+.popup-label {
+    font-size: 13px;
+    margin-bottom: -15px;
+    margin-left: 15px;
+    z-index: 1;
+    background: #fff;
+    display: inline;
+    width: 150px;
+    padding: 5px;
+    color: #aca9a9;
+    max-width: max-content;
+}
+
+.popup-email {
+    font-size: 13px;
+    margin-bottom: -15px;
+    margin-left: 15px;
+    z-index: 1;
+    background: #fff;
+    display: inline;
+    width: 52px;
+    padding: 5px;
+    color: #aca9a9;
+}
+
+.popup-password {
+    font-size: 13px;
+    margin-bottom: -15px;
+    margin-left: 15px;
+    z-index: 1;
+    background: #fff;
+    display: inline;
+    width: 70px;
+    padding: 5px;
+    color: #aca9a9;
+}
+
+.popup-role {
+    font-size: 13px;
+    position: relative;
+    bottom: -11px;
+    margin-left: 15px;
+    z-index: 1;
+    background: #fff;
+    display: inline;
+    width: 52px;
+    padding: 5px;
+    color: #aca9a9;
+    padding-right: 7px;
+}
+
+.popup-select {
+    border-radius: 5px;
+    border: solid 1px #707070;
+    padding: 1rem;
+    background-color: #fff;
+    width: 100%;
+}
+
+.popup-switch {
+    position: relative;
+    top: -7px;
+}
+
+.service-popup {
+    margin-top: 100px;
+}
+
+.textarea-popup {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #707070;
+    padding: 1rem;
+    background-color: #fff;
+    &:focus {
+        outline: none;
+    }
+}
+
+.popup-name {
+    width: 57px;
+    &-ar {
+        width: 80px;
+    }
+    &-lat {
+        width: 29px;
+    }
+    &-long {
+        width: 42px
+    }
+    &-id {
+        width: auto;
+    }
+    &-quality {
+        width: 65px;
+    }
+}
+
+.popup-description-ar{
+    width: 104px;
+ 
+}
+.popup-mobile{
+width: 110px;
+max-width: max-content;
+}
+
+.popup-quality{
+    width: 63px;
+}
+
+
+@media (max-width: 768px) {
+    .popup-button {
+        width: 100%;
+    }
+}

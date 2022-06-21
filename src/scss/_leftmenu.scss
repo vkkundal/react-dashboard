@@ -1,0 +1,65 @@
+@import "./variable";
+
+.leftmenu-wrapper {
+    width: 250px;
+    color: #000000;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.nav {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.nav li {
+    padding: 8px;
+}
+.nav li a {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #000;
+    padding: 10px;
+}
+.nav-icons svg {
+    font-size: 16px;
+    fill: #000;
+    stroke: #000;
+    position: relative;
+}
+.nav-icons span {
+    margin-left: 15px;
+}
+
+.active {
+    color: #fff !important;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 #5a6da3;
+    background-color: #5a6da3;
+    svg {
+        fill: #fff !important;
+        stroke: #fff !important;
+    }
+}
+
+
+
+.logo-panel {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo-panel img {
+    width: 146px;
+    height: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .leftmenu-wrapper {
+        display: none;
+    }
+}

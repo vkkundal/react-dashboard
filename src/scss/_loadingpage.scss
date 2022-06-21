@@ -1,0 +1,25 @@
+@import './variable';
+
+.loadingpage {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+    &__wrapper {
+        width: 300px;
+        animation: bounce 2s linear  infinite;
+    }
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.05);
+    }
+}

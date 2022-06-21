@@ -1,0 +1,97 @@
+@import "./variable";
+
+/*user form*/
+
+.User-id,
+.User-name,
+.User-number,
+.User-change {
+    display: flex;
+    justify-content: space-between;
+}
+
+.User-label {
+    display: block;
+    color: #9b9b9b;
+    font-size: 14px;
+}
+
+.User-status {
+    margin-right: 20%;
+}
+
+.User-input,
+.User-select {
+    color: #000;
+    font-size: 14px;
+    padding: 9px;
+    border-radius: 4px;
+    border: solid 1.3px #9b9b9b;
+    width: 90%;
+    margin-bottom: 20px;
+    color &::placeholder {
+        font-size: 14px;
+        color: #9b9b9b;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+.disabled {
+    background-color: #ebebeb;
+    border: solid 1.3px #ebebeb;
+}
+
+
+/* Items */
+
+
+.upload-image {
+    cursor: pointer;
+    color: #9b9b9b;
+    padding: 20px;
+    border-radius: 2px;
+    border: 1px dashed #9b9b9b;
+}
+
+.upload-icon {
+    font-size: 24px;
+}
+
+.is-active, .switch {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 44px;
+}
+.switch span{
+    margin-right: 20px;
+}
+.is-active span {
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    /*user form*/
+    .User-id,
+    .User-name,
+    .User-number,
+    .User-change {
+        flex-direction: column;
+    }
+    .User-input,
+    .User-select {
+        width: 100%;
+    }
+    .User-submit input {
+        width: 100%;
+        text-align: center !important;
+    }
+    .btn-outline {
+        width: 100%;
+        margin: 20px 0px;
+    }
+}

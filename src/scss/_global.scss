@@ -1,0 +1,137 @@
+@import "./variable";
+
+/*********************
+    Global Styles
+**********************/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border-radius: 5px;
+    border: solid 1px #707070;
+    padding: 1rem;
+    background-color: #fff;
+    &:focus {
+        outline: none;
+    }
+    &:disabled {
+        background-color: lighten($color: #e0e0e0, $amount: 8);
+        cursor: not-allowed;
+    }
+}
+
+.btn {
+    border: 0;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
+    background-color: $primary-color;
+
+    &-block {
+        display: block;
+        width: 100%;
+    }
+    &-outline {
+        color: #ff9900;
+        padding: 0.8rem 2rem;
+        border-radius: 5px;
+        border: solid 1px #ff9900;
+        background-color: #fff;
+        margin-left: 40px;
+        &:hover {
+            background-color: #ff9900;
+            color: #fff;
+            transition: 0.7s;
+        }
+    }
+    &:hover {
+        color: #fff;
+        background-color: darken($primary-color, $amount: 2);
+    }
+    &:disabled {
+        background-color: $primary-color;
+    }
+    &:focus {
+        outline: none;
+    }
+    &-green {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border: solid 1px #32ca75;
+        background-color: #32ca75;
+        &:hover {
+            background-color: darken(#32ca75, $amount: 2);
+        }
+    }
+}
+
+.edit{
+    font-size: 20px;
+    color: #32ca75;
+    background-color: #32ca742d;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px
+}
+.paper {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    position: relative;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.img-fluid {
+    max-width: 100%;
+} 
+
+
+
+
+
+@media (max-width: 1304px) {
+    .warehousebtnfix {
+        padding: 1rem .5rem;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .warehousefix {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .warehousebtnfix {
+        padding: 1rem 2rem;
+        font-size: 0.9rem;    
+    }
+}
